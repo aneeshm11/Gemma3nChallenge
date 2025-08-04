@@ -122,6 +122,8 @@ https://www.kaggle.com/datasets/aneeshmukkamala/timmweights/
 ```
 
 > Processed WSI training data
+NOTE:
+The data processing was carried out in mutliple CPU sessions (18 different sessions) on Kaggle. The session wise data (the images in .npy format, the labels) are stored in this dataset as well. This can be found in the sessionfiles dir in this dataset below
 ```
 https://www.kaggle.com/datasets/aneeshmukkamala/miccaireg/
 ```
