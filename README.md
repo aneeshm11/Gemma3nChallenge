@@ -61,15 +61,18 @@ https://www.kaggle.com/code/aneeshmukkamala/data-download-hf-to-kaggle
 https://www.kaggle.com/code/aneeshmukkamala/edareg
 ```
 
+
 > 4) Processing raw WSI into processed images for training
 ```
 https://www.kaggle.com/code/aneeshmukkamala/data-processing
 ```
 
+
 > 5) Train Custom ViT and CNN models on processed WSI
 ```
 https://www.kaggle.com/code/aneeshmukkamala/vm-scratch
 ```
+
 
 > 6) Train TIMM backbone ViT and CNN models on processed WSI
 ```
