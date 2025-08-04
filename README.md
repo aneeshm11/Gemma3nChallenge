@@ -152,4 +152,34 @@ All-in-one inference dataset (contains all necessary components from above datas
 
 
 
+Repository Structure
+
+    train_and_inference/
+
+        Contains notebooks for training, running inference, and merging visual-language models (VLMs).
+
+    utilityscripts/
+
+        Utility scripts to install packages dependencies required for offline training on L4 GPUs. This can be used on other GPUs as well to skip the package downloading step
+
+    logs_and_metrics/
+
+        Stores plots and visualizations for analyzing training and evaluation metrics.
+
+    modalapp/
+
+        code for training models using GPUs on Modal (https://modal.com/) 
+
+        new/
+            
+            Implements training logic for Float32 models based on the newly proposed method.
+
+        old/
+   
+            Contains older experiments using models like CLIP, SigLIP, and other TIMM-based variants.
+    
+    utils/
+   
+        Scripts for data downloading, preprocessing, and some exploratory data analysis.
+
 
