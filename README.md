@@ -1,7 +1,6 @@
 # DATASET FILES
 
-The datasets are available in the following links, all are publicly available:
-These consist of the RAW WSI files without any downscaled operations
+The datasets are available in the following links, all are publicly available and consist of the RAW WSI files without any downscaled operations. 
 
 ## HUGGINGFACE
 
@@ -33,12 +32,6 @@ https://www.kaggle.com/datasets/aneeshmukkamala/reghf11
 
 All code files are in jupyter notebook format only as all processes for this project are carried out on Kaggle. 
 Except the files used for training an additional model on Modal website 
-
-This GitHub Repo has all the files
-
-```
-
-```
 
 EDA of the WSI dimensions
 ```
@@ -107,5 +100,9 @@ Training weights having LoRA adapters, projector pth files.
 https://www.kaggle.com/datasets/aneeshmukkamala/lmweights/
 ```
 
-For kaggle inference, the output of notebooks are added to system path 
-from the ``` vlm-merger``` notebook to load the LoRA merged model into the ``` vlm-inference``` notebook
+The above listed Kaggle datasets have weights from various runs, different combination and many more.
+All final needed data to run inference is bundled in this single dataset below using the above datasets,
+
+```
+https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
+```
