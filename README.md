@@ -39,7 +39,7 @@ https://www.kaggle.com/datasets/aneeshmukkamala/reghf11
 
 # CODE FILES and workflow
 
-All code files are in Jupyter notebook format. The files on GitHub represent the latest versions, while all historical versions are available on Kaggle and can be accessed publicly. All older versions of these files are present on Kaggle and can be accessed publicly
+All code files are in Jupyter notebook format. The files on GitHub represent the latest versions, while all older versions are available on Kaggle and can be accessed publicly.
 
 The order of usage of all files in this project is listed below:
 
@@ -122,14 +122,15 @@ https://www.kaggle.com/code/aneeshmukkamala/pip-openslide
 https://www.kaggle.com/datasets/aneeshmukkamala/codefiles/
 ```
 
-> Timm model weights
+> Trained Timm model weights
 ```
 https://www.kaggle.com/datasets/aneeshmukkamala/timmweights/
 ```
 
-> Processed WSI training data
 NOTE:
 The data processing was carried out in mutliple CPU sessions (18 different sessions) on Kaggle. The session wise data (the images in .npy format, the labels) are stored in this dataset as well. This can be found in the sessionfiles dir in this dataset below
+
+> Processed WSI training data
 ```
 https://www.kaggle.com/datasets/aneeshmukkamala/miccaireg/
 ```
@@ -164,7 +165,9 @@ https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
 
 
 All-in-one inference dataset and code (contains all necessary components from above datasets)
-The ``vlm-inference-1``` notebook listed about is used for inference. 
+
+``vlm-inference-1``` 
+This notebook listed above is used for inference. 
 The float32 variant model is also attatched to this notebook. 
 
 # Repository Structure
