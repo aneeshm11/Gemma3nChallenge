@@ -3,7 +3,7 @@ from pathlib import Path
 
 # ========================================= PARAMETERS AND ARGS =========================================
 
-number = 11.3
+number = 11.7
 
 class CFG:
     app_name = f"vlm-training-app-{number}"
@@ -23,7 +23,7 @@ class CFG:
     TRAIN_END = 5000
 
     LABEL_MASK = -100
-    MAX_LENGTH = 50
+    MAX_LENGTH = 50 
     
     VM_LR = 2e-4
     LLM_LR = 2e-5
@@ -149,6 +149,7 @@ def train_and_upload():
                 trust_remote_code=True,
                 device_map="cuda:0",
                 low_cpu_mem_usage=True,
+                # torch_dtype=torch.bfloat16,      # uncomment for bfloat16 training. By default model weights are loaded in float32
             )
             
             num_layers = 30
@@ -175,6 +176,7 @@ def train_and_upload():
             )
             
             language_model = get_peft_model(model, lora_config) 
+            # language_model = language_model.to(dtype=torch.bfloat16)  # uncomment these for bfloat16 training
             language_model.print_trainable_parameters()
 
             try:
@@ -445,10 +447,14 @@ def train_and_upload():
                         return_tensors="pt",
                     )
                     tokenized = {k: v.to(device) for k, v in tokenized.items()}
-                    text_embeddings = self.language_model.get_input_embeddings()(tokenized["input_ids"])
                     
+                    text_embeddings = self.language_model.get_input_embeddings()(tokenized["input_ids"])
                     patch_embeddings = self.projector(image_features, text_embeddings)
-                                        
+
+                    # patch_embeddings = patch_embeddings.to(torch.bfloat16)  # uncomment these for bfloat16 training
+                    # text_embeddings = text_embeddings.to(torch.bfloat16)    # uncomment these for bfloat16 training
+
+                    
                     # Concatenate embeddings
                     embeddings = torch.cat([
                         self.prompt_embeddings.expand(patches.size(0), -1, -1),
@@ -497,7 +503,7 @@ def train_and_upload():
                         contrastive_loss = (F.cross_entropy(logits, labels_contrastive) + 
                                           F.cross_entropy(logits.t(), labels_contrastive)) / 2
                         
-                        total_loss = total_loss + 0.4 * contrastive_loss  
+                        total_loss = total_loss + 0.4 * contrastive_loss    # changed from 0.1 to 0.4
                         loss_dict["contrastive_loss"] = contrastive_loss
                     
                     # Attention regularization loss
@@ -520,6 +526,8 @@ def train_and_upload():
                     
                     image_features = self.image_model.backbone.forward_features(patches)
                     patch_embeddings = self.projector(image_features)
+                    
+                    # patch_embeddings = patch_embeddings.to(torch.bfloat16) # for bfloat16 inference
                     
                     embeddings = torch.cat([
                         self.prompt_embeddings.expand(patches.size(0), -1, -1),
@@ -769,4 +777,5 @@ def main():
     train_and_upload.remote()
 
 if __name__ == "__main__":
+
     train_and_upload.remote()
