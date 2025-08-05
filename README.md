@@ -1,7 +1,8 @@
 # PROJECT OVERVIEW
 This project processes Whole Slide Images (WSI) for pathology tasks and introduces a novel approach for training Vision-Language Models (VLMs) for medical image analysis. It trains a large language model (LLM) (Gemma-3n) through its NLP/language layers to process image tokens in an autoregressive manner (without using it's vision modality), producing concise description / reports for pathology images that capture the cellular details of body organs stored in WSI files. This project demonstrates significantly improved performance compared to CLIP and SigLIP (both of which were also compared under the same training method by processing image tokens in an autoregressive manner). All processes are conducted using Jupyter notebooks on Kaggle, with additional training done on Modal website. The workflow involves downloading raw WSI data, processing it, training various models, and performing inference. This project paves the way for future research into adapting LLMs for visual tasks involving domain-specific data distributions that differ significantly from the datasets used to pretrain these models. 
 
-A detailed technical report is included in this repository, with and in-depth explanations of all components of the project. For a comprehensive understanding, make sure to give it a thorough read.
+A detailed technical report is included in this repository, with in-depth explanations of all components of the project. For a comprehensive understanding, make sure to give it a thorough read.
+
 Demo Video:
 ```
 https://www.youtube.com/watch?v=2rA48SUgUwE
@@ -97,7 +98,7 @@ https://www.kaggle.com/code/aneeshmukkamala/vlm-merger
 https://www.kaggle.com/code/aneeshmukkamala/vlm-inference-1
 ```
 
-> 10) Get metrics like ROGUE, LEVENSHTEIN ration and similarity scores between ground truth and output reports during inference for comparison
+> 10) Get metrics like LEVENSHTEIN ratio and similarity scores between ground truth and output reports during inference for comparison
 ```
 https://www.kaggle.com/code/aneeshmukkamala/vlm-metrics/
 ```
@@ -140,7 +141,7 @@ https://www.kaggle.com/datasets/aneeshmukkamala/miccaireg/
 https://www.kaggle.com/datasets/aneeshmukkamala/gemma3/
 ```
 
-> Training weights having LoRA adapters, projector pth files.
+> Training weights having LoRA adapters, projector .pth files.
 ```
 https://www.kaggle.com/datasets/aneeshmukkamala/lmweights/
 ```
@@ -161,8 +162,6 @@ https://www.kaggle.com/datasets/aneeshmukkamala/float32gemma3n
 ```
 https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
 ```
-
-
 
 All-in-one inference dataset and code (contains all necessary components from above datasets)
 
