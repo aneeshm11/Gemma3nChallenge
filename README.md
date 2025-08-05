@@ -166,31 +166,33 @@ https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
 
 All-in-one inference dataset and code (contains all necessary components from above datasets)
 
-``vlm-inference-1``` 
+```https://www.kaggle.com/code/aneeshmukkamala/vlm-inference-1``` 
+
 This notebook listed above is used for inference. 
 The float32 variant model is also attatched to this notebook. 
 
 # Repository Structure
+    
+    codefiles/
+        train_and_inference/
 
-    train_and_inference/
+            Contains notebooks for training, running inference, merging LoRA weights.
 
-        Contains notebooks for training, running inference, and merging visual-language models (VLMs).
+        utilityscripts/
 
-    utilityscripts/
-
-        Utility scripts to install packages dependencies required for offline training on L4 GPUs. This can be used on other GPUs as well to skip the package downloading step
+            Utility scripts to install packages dependencies required for offline training on L4 GPUs. This can be used on other GPUs as well to skip the package downloading step
 
     logs_and_metrics/
 
-        Stores plots and visualizations for analyzing training and evaluation metrics.
+        Plots and images of visualizations for analyzing training and evaluation metrics.
 
     modalapp/
 
-        code for training models using GPUs on Modal (https://modal.com/) 
+        Code for training models using GPUs on Modal (https://modal.com/) 
 
         new/
             
-            Implements training logic for Float32 models based on the newly proposed method.
+            Implements training logic for the models based on the newly proposed method.
 
         old/
    
