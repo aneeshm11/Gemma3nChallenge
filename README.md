@@ -164,13 +164,14 @@ https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
 ```
 
 All-in-one inference dataset and code (contains all necessary components from above datasets)
+
 Since the architecture of this project requires a minimum of 14Gb GPU RAM, the solution is not deployed elsewhere. 
 Upon confirmation with 
 ```
 https://www.kaggle.com/addisonhoward
 ```
 regarding the eligibilty for the submission to be valid, my final submission is presented in form a public Kaggle notebook for testing and performing inference.
-The code below is needed to perform inference on a single WSI. 
+The code below is needed to perform on  WSI files. 
 
 ```https://www.kaggle.com/code/aneeshmukkamala/vlm-inference-1``` 
 
