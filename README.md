@@ -63,18 +63,15 @@ https://www.kaggle.com/code/aneeshmukkamala/data-download-hf-to-kaggle
 https://www.kaggle.com/code/aneeshmukkamala/edareg
 ```
 
-
 > 4) Processing raw WSI into processed images for training
 ```
 https://www.kaggle.com/code/aneeshmukkamala/data-processing
 ```
 
-
 > 5) Train Custom ViT and CNN models on processed WSI
 ```
 https://www.kaggle.com/code/aneeshmukkamala/vm-scratch
 ```
-
 
 > 6) Train TIMM backbone ViT and CNN models on processed WSI
 ```
@@ -148,6 +145,11 @@ https://www.kaggle.com/datasets/aneeshmukkamala/lmweights/
 https://www.kaggle.com/datasets/aneeshmukkamala/outputsandlogs
 ```
 
+> Float 32 trained variant
+```
+https://www.kaggle.com/datasets/aneeshmukkamala/float32gemma3n
+```
+
 
 # Complete Inference Package
 
@@ -155,9 +157,11 @@ https://www.kaggle.com/datasets/aneeshmukkamala/outputsandlogs
 https://www.kaggle.com/datasets/aneeshmukkamala/inferencedata/
 ```
 
-All-in-one inference dataset (contains all necessary components from above datasets)
 
 
+All-in-one inference dataset and code (contains all necessary components from above datasets)
+The ``vlm-inference-1``` notebook listed about is used for inference. 
+The float32 variant model is also attatched to this notebook. 
 
 # Repository Structure
 
