@@ -197,7 +197,7 @@ The float32 variant model is also attatched to this notebook.
             Utility scripts to install packages dependencies required for offline training on L4 GPUs. This can be used on other GPUs as well to skip the package downloading step
 
     gradio_app/ 
-        Code files of Gradio app deployed on HuggingFace spaces for inference 
+        Code files of Gradio app deployed on HuggingFace spaces for inference along with a sample .tiff WSI file
         
     logs_and_metrics/
 
