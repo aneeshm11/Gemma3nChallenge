@@ -14,6 +14,7 @@ https://huggingface.co/spaces/aneeshm44/Gemma3nSolution
 ```
 
 For testing, use the small sample WSI .tiff file attatched in this repo under "gradio_app" folder or in the datasets mentioned below to perform inference on the models related to this project. 
+Out of the two main models trained, in bfloat16 and float32 precision, this application uses bfloat16 variant. For using float32 variant, please refer the notebook link towards the end of this README file. 
 
 # Dataset Files
 
