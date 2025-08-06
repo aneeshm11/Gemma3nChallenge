@@ -8,6 +8,13 @@ Demo Video:
 https://www.youtube.com/watch?v=2rA48SUgUwE
 ```
 
+Depoloyed Application:
+```
+https://huggingface.co/spaces/aneeshm44/Gemma3nSolution
+```
+
+
+
 # Dataset Files
 
 The datasets are available in the following links, all are publicly available and consist of the RAW WSI files without any downscaled operations. 
@@ -189,6 +196,9 @@ The float32 variant model is also attatched to this notebook.
 
             Utility scripts to install packages dependencies required for offline training on L4 GPUs. This can be used on other GPUs as well to skip the package downloading step
 
+    gradio_app/ 
+        Code files of Gradio app deployed on HuggingFace spaces for inference 
+        
     logs_and_metrics/
 
         Plots and images of visualizations for analyzing training and evaluation metrics.
