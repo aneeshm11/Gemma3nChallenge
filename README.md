@@ -5,7 +5,7 @@ A detailed technical report is included in this repository, with in-depth explan
 
 Demo Video:
 ```
-https://www.youtube.com/watch?v=2rA48SUgUwE
+https://www.youtube.com/watch?v=Q_a0xA59USQ
 ```
 
 Depoloyed Application:
