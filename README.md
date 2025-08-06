@@ -13,7 +13,7 @@ Depoloyed Application:
 https://huggingface.co/spaces/aneeshm44/Gemma3nSolution
 ```
 
-
+Use the small sample WSI .tiff file attatched in this repo under "gradio_app" folder for inference. 
 
 # Dataset Files
 
