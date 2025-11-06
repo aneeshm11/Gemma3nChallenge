@@ -20,16 +20,6 @@ Out of the two main models trained, in bfloat16 and float32 precision, this appl
 
 The datasets are available in the following links, all are publicly available and consist of the RAW WSI files without any downscaled operations. 
 
-## HuggingFace Datasets
-
-```
-https://huggingface.co/datasets/aneeshm44/reg1
-https://huggingface.co/datasets/aneeshm44/reg2
-https://huggingface.co/datasets/aneeshm44/reg3
-https://huggingface.co/datasets/aneeshm44/reg4
-https://huggingface.co/datasets/aneeshm44/reg5
-``` 
-
 ## Kaggle Datasets
  
 ```
