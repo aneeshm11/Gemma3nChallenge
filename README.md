@@ -3,11 +3,6 @@ This project processes Whole Slide Images (WSI) for pathology tasks and introduc
 
 A detailed technical report is included in this repository, with in-depth explanations of all components of the project. For a comprehensive understanding, make sure to give it a thorough read.
 
-Demo Video:
-```
-https://www.youtube.com/watch?v=Q_a0xA59USQ
-```
-
 Depoloyed Application:
 ```
 https://huggingface.co/spaces/aneeshm44/Gemma3nSolution
